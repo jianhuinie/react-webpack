@@ -4,6 +4,9 @@
   "private": true,
   "dependencies": {
     "@babel/core": "7.6.0",
+    "@babel/plugin-transform-react-jsx": "^7.7.0",
+    "@babel/plugin-transform-react-jsx-self": "^7.2.0",
+    "@babel/plugin-transform-react-jsx-source": "^7.5.0",
     "@svgr/webpack": "4.3.2",
     "@typescript-eslint/eslint-plugin": "^2.2.0",
     "@typescript-eslint/parser": "^2.2.0",
@@ -48,9 +51,12 @@
     "react-dom": "^16.12.0",
     "resolve": "1.12.0",
     "resolve-url-loader": "3.1.0",
+    "rupture": "^0.7.1",
     "sass-loader": "7.2.0",
     "semver": "6.3.0",
     "style-loader": "1.0.0",
+    "stylus": "^0.54.7",
+    "stylus-loader": "^3.0.2",
     "terser-webpack-plugin": "1.4.1",
     "ts-pnp": "1.1.4",
     "url-loader": "2.1.0",
@@ -131,5 +137,15 @@
     "presets": [
       "react-app"
     ]
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -e $GIT_PARAMS"
+    }
+},
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "husky": "^4.0.0-beta.5"
   }
 }
