@@ -12,6 +12,7 @@
 + eslint
 + eslintrc
 + unit test
++ Happypack
 
 
 ### DONE
